@@ -16,4 +16,8 @@ std::vector<std::optional<unsigned int>> dijkstra(
     const std::size_t src
 );
 
+std::vector<std::tuple<std::size_t, std::size_t, unsigned int>> prim(
+    const std::vector<std::vector<std::tuple<std::size_t, unsigned int>>>& graph
+);
+
 #endif //GRAPH_H

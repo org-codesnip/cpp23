@@ -20,7 +20,9 @@ vector<optional<unsigned int>> dijkstra(
         const auto [dist, v] = heap.top();
         heap.pop(); // why no return value ??
 
-        if (ret[v].value_or(numeric_limits<unsigned int>::max()) <= dist) {
+        if (ret[v].value_or(
+            numeric_limits<unsigned int>::max()
+            ) <= dist) {
             continue; // visited
         }
         ret[v] = dist;

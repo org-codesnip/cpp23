@@ -9,6 +9,7 @@ add_executable(
 
         graph/bfs.cpp
         graph/dijkstra.cpp
+        graph/prim.cpp
 
         main.cpp
 )
