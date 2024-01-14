@@ -17,7 +17,9 @@ vector<optional<unsigned int>> bfs(
     while (!breadth.empty()) {
         vector<size_t> breadth_next;
         for (const auto v : breadth) {
-            if (ret[v].value_or(numeric_limits<unsigned int>::max()) <= water_level) {
+            if (ret[v].value_or(
+                numeric_limits<unsigned int>::max()
+                ) <= water_level) {
                 continue;
             }
             ret[v] = water_level;
